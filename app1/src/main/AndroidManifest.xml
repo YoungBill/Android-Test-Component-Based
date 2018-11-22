@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="baina.android.com.app1">
+
+    <application>
+        <activity android:name=".PluginTest1Activity" />
+    </application>
+</manifest>
