@@ -2,6 +2,17 @@
     package="baina.android.com.app2">
 
     <application>
-        <activity android:name=".PluginTest2Activity" />
+        <activity android:name=".PluginTest2Activity">
+            <intent-filter>
+                <action android:name="android.action.plugintest1activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="app2.host"
+                    android:path="/plugin_uri_plugintest2activity_path"
+                    android:scheme="app2" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
