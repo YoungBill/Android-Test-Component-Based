@@ -23,6 +23,10 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
     implementation project(':core')
-    implementation project(':app1')
-    implementation project(':app2')
+    if (isApp1Plugin.toBoolean()) {
+        implementation project(':app1')
+    }
+    if (isApp2Plugin.toBoolean()) {
+        implementation project(':app2')
+    }
 }
