@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import baina.android.com.core.Router;
+import baina.android.com.core.route.Router;
 
 public class MainActivity extends AppCompatActivity {
 

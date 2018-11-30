@@ -1,4 +1,4 @@
-package baina.android.com.core;
+package baina.android.com.core.route;
 
 import android.content.Context;
 import android.content.Intent;

@@ -5,8 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import baina.android.com.core.Router;
-import baina.android.com.core.RouterConfig;
+import com.alibaba.android.arouter.launcher.ARouter;
+
+import baina.android.com.core.route.RouterConfig;
 
 public class PluginTest1Activity extends AppCompatActivity {
 
@@ -21,9 +22,11 @@ public class PluginTest1Activity extends AppCompatActivity {
         findViewById(R.id.toPluginTest2ActivityBt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "app2://app2.host/plugin_uri_plugintest2activity_path";
-                String data = "data from app1 module's PluginTest1Activity";
-                Router.push(PluginTest1Activity.this, url, data, 0);
+//                String url = "app2://app2.host/plugin_uri_plugintest2activity_path";
+//                String data = "data from app1 module's PluginTest1Activity";
+//                Router.push(PluginTest1Activity.this, url, data, 0);
+
+                ARouter.getInstance().build("/app2/plugintest2").withString(RouterConfig.ROUTER_URL_PARAMS, "data from app1 module's PluginTest1Activity").navigation();
             }
         });
     }

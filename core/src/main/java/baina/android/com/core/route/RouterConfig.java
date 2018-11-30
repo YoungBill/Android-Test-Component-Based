@@ -1,4 +1,4 @@
-package baina.android.com.core;
+package baina.android.com.core.route;
 
 /**
  * Created by taochen on 18-11-22.
